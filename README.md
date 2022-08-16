@@ -242,3 +242,44 @@ If you’re happy with that, and you verify that everything that had conflicts h
 ```
 
 If you think it would be helpful to others looking at this merge in the future, you can modify this commit message with details about how you resolved the merge and explain why you did the changes you made if these are not obvious.
+
+## Other important commands
+
+To list all your current branches
+
+```
+$ git branch
+iss53
+* master
+testing
+```
+
+To see the last commit on each branch, you can run git branch -v:
+
+```
+$ git branch -v
+iss53   93b412c Fix javascript issue
+* master  7a98805 Merge branch 'iss53'
+testing 782fd34 Add scott to the author list in the readme
+```
+
+Use --merged and --no-merged options to list branches that you have or have not yet merged into the branch you’re currently on.
+
+```
+$ git branch --merged
+iss53
+* master
+```
+
+```
+$ git branch --no-merged
+testing
+```
+
+to delete a branch use -d option
+
+```
+$ git branch -d <branch-name>
+```
+
+
